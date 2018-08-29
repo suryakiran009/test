@@ -1,0 +1,546 @@
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit
+$ touch index.html
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit
+$ touch app.js
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit
+$ ls -lrt
+total 0
+-rw-r--r-- 1 AzureAD+SuryaKiran 4096 0 Aug 28 14:22 index.html
+-rw-r--r-- 1 AzureAD+SuryaKiran 4096 0 Aug 28 14:22 app.js
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit
+$ where am i
+INFO: Could not find files for the given pattern(s).
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit
+$ which index
+which: no index in (/c/Users/SuryaKiran/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/Users/SuryaKiran/bin:/c/ProgramData/Oracle/Java/javapath:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/cmd:/mingw64/bin:/usr/bin:/c/Users/SuryaKiran/AppData/Local/Microsoft/WindowsApps:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit
+$ git add
+fatal: not a git repository (or any of the parent directories): .git
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit
+$ git init
+Initialized empty Git repository in C:/Users/SuryaKiran/Desktop/MyGit/.git/
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git config --global user.name 'Surya Kiran'
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git config --global user.email 'rvrsuryakiran@gmail.com'
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git add index.html
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git add -A
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git add .
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git commit
+[master (root-commit) c945d11]  Initial commit
+ 2 files changed, 8 insertions(+)
+ create mode 100644 app.js
+ create mode 100644 index.html
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git add .
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git commit -m 'Changed app.js'
+[master 1a89058] Changed app.js
+ 1 file changed, 1 insertion(+)
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ touch .gitignore
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ touch log.txt
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git add .
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git add .
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        modified:   app.js
+        new file:   sk/app1.js
+
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git branch test
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        modified:   app.js
+        new file:   sk/app1.js
+
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git commit -m ' Chnaged many'
+[master edf026e]  Chnaged many
+ 3 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ create mode 100644 sk/app1.js
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git chewckout test
+git: 'chewckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git checkout test
+Switched to branch 'test'
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (test)
+$ touch login.html
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (test)
+$ git add .
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (test)
+$ git commit -m 'Login form'
+[test 01da67b] Login form
+ 4 files changed, 5 insertions(+)
+ create mode 100644 log.txt
+ create mode 100644 login.html
+ create mode 100644 sk2/app2.js
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (test)
+$ git checkout master
+Switched to branch 'master'
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git merge login
+merge: login - not something we can merge
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git merge test
+Merge made by the 'recursive' strategy.
+ index.html  | 2 ++
+ log.txt     | 1 +
+ login.html  | 1 +
+ sk2/app2.js | 1 +
+ 4 files changed, 5 insertions(+)
+ create mode 100644 log.txt
+ create mode 100644 login.html
+ create mode 100644 sk2/app2.js
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add origin https://github.com/suryakiran009/NewGitTest.git
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote
+origin
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add NewGitTest
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add NewGitTest https://github.com/suryakiran009/NewGitTest.git
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote
+NewGitTest
+origin
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push -u NewGitTest master
+To https://github.com/suryakiran009/NewGitTest.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/suryakiran009/NewGitTest.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote remove origin
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote
+NewGitTest
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push -u NewGitTest master
+To https://github.com/suryakiran009/NewGitTest.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/suryakiran009/NewGitTest.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push --help
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ ls
+app.js  index.html  log.txt  login.html  sk/  sk2/
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push -u NewGitTest master
+To https://github.com/suryakiran009/NewGitTest.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/suryakiran009/NewGitTest.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote
+NewGitTest
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push -u NewGitTest master
+To https://github.com/suryakiran009/NewGitTest.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/suryakiran009/NewGitTest.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add origin https://github.com/suryakiran009/test.git
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote
+NewGitTest
+origin
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push -u origin master
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (22/22), 1.80 KiB | 307.00 KiB/s, done.
+Total 22 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/suryakiran009/test.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ touch README.md
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git add .
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git commit -m
+error: switch `m' requires a value
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git commit -m 'readme/
+> ^C
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git commit -m 'readme'
+[master f20442b] readme
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/suryakiran009/test.git
+   76ff9a8..f20442b  master -> master
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git pull
+Already up to date.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add origin https://github.com/suryakiran009/NewGitTest.git
+fatal: remote origin already exists.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote
+NewGitTest
+origin
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push
+Everything up-to-date
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add test https://suryakiran009@bitbucket.org/suryakiran009/brahmam.git
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push test
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+SKinUK009
+To https://bitbucket.org/suryakiran009/brahmam.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://suryakiran009@bitbucket.org/suryakiran009/brahmam.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ SKinUK009
+bash: SKinUK009: command not found
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add originhttps://suryakiran009@bitbucket.org/suryakiran009/brahmam.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add origin https://suryakiran009@bitbucket.org/suryakiran009/brahmam.git
+fatal: remote origin already exists.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote remove test
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote
+NewGitTest
+origin
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add origin1 https://suryakiran009@bitbucket.org/suryakiran009/brahmam.git
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push origin1
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+To https://bitbucket.org/suryakiran009/brahmam.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://suryakiran009@bitbucket.org/suryakiran009/brahmam.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add origin https://suryakiran009@bitbucket.org/suryakiran009/gittest.git
+fatal: remote origin already exists.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git remote add test https://suryakiran009@bitbucket.org/suryakiran009/gittest.git
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git push -u test master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (25/25), 2.04 KiB | 231.00 KiB/s, done.
+Total 25 (delta 4), reused 0 (delta 0)
+To https://bitbucket.org/suryakiran009/gittest.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'test'.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git --checkout login
+unknown option: --checkout
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git checkout login
+error: pathspec 'login' did not match any file(s) known to git.
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (master)
+$ git checkout test
+Switched to branch 'test'
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (test)
+$ git push test
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create pull request for test:
+remote:   https://bitbucket.org/suryakiran009/gittest/pull-requests/new?source=test&t=1
+remote:
+To https://bitbucket.org/suryakiran009/gittest.git
+ * [new branch]      test -> test
+
+AzureAD+SuryaKiran@DESKTOP-56U0ABM MINGW64 ~/Desktop/MyGit (test)
+$
